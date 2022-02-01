@@ -27,4 +27,4 @@ Attribute Information: 1.date: Date in format dd/mm/yyyy
 * Here I have used the LSTM neural network which is now the state-of-the-art for sequencial problems.
 * In order to reduce the computation time, and get some results quickly, I took the first year of data (resampled over hour) to train the model and the rest of data to test the model.
 * I put together a very simple LSTM neural-network to show that one can obtain reasonable predictions. However numbers of rows is too high and as a result the computation is very time-consuming (even for the simple model in the above it took few mins to be run on 2.8 GHz Intel Core i7). The Best is to write the last part of code using Spark (MLlib) running on GPU.
-* Moreover, the neural-network architecture that I have designed is a toy model. It can be easily improved by adding CNN and dropout layers. The CNN is useful here since there are correlations in data (CNN layer is a good way to probe the local structure of data).
+* The CNN is useful here since there are correlations in data (CNN layer is a good way to probe the local structure of data).
